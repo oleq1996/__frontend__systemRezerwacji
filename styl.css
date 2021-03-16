@@ -1,21 +1,46 @@
 body{
 	margin:0;
 	padding:0;
-	background-color:black;
+	background-color: #696969;
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-size: 100%;
 	}
 .logo{
-	border: 50px solid yellow;
-	background: #ccc;
-
-}
-.mini{
-	size:2px;
+	border: px solid black;
+    height: 55px;
+	background: #000;
 }
 .tekst{
-	margin-left: 50px;
-	color: blue;
-	size:15px;
+	color: white;
+	margin-left: 100px;
+    float: left;
+}
+div span{ 
+ font-size:40px;
+}
+.menu{
+    
+}
+.tekst:hover{
+	opacity: 0.5;
+	color: white;
+	margin-left: 100px;
+}
+.tekst:active{
+    color: blue;
+	margin-left: 100px;
+}
+.rep{  
+    
+    color: red;
+    text-decoration: none;
+}
+#menu{
+    float: left;
+    box-sizing: border-box;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
 }
