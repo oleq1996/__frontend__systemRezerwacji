@@ -1,6 +1,6 @@
 # Lista zadań (bez logiki):
  * strona główna (index.html)
- * strona szczegółów filmu (details.html)
+ * strona szczegółów filmu (details.html ? details.php ?)
      * jedna podstrona - szablon
      * nazwa filmu przekazywana w formacie _"/details/nazwa+filmu"_
  * strona repertuaru (program.html)
