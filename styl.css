@@ -2,37 +2,20 @@ body{
 	margin:0;
 	padding:0;
 	background-color:black;
-	
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-size: 100%;
 	}
-.tytul{
-	width:70vw; 
-	height:300px;
-	margin-top:10vh;
-	margin-left:15vw;
-	margin-right:15vw;
-	border-radius:25px 25px 25px 25px;
-	
-}
+.logo{
+	border: 50px solid yellow;
+	background: #ccc;
 
+}
+.mini{
+	size:2px;
+}
 .tekst{
-	font-family: 'Montserrat', sans-serif;
-	border:15px solid rgba(255,255,255,0.0); 
-	margin-top:2vh;
-	margin-left:15vw;
-	margin-right:15vw;
-	margin-bottom:3vh;
-	width:69vw; 
-	height:4000px;
-	color:white;
+	margin-left: 50px;
+	color: blue;
+	size:15px;
 }
-.tresc{
-	font-size: 24px;
-}
-.naglowek{
-	
-	font-size: 60px;
-}
-
