@@ -19,9 +19,7 @@ body{
 div span{ 
  font-size:40px;
 }
-.menu{
-    
-}
+
 .tekst:hover{
 	opacity: 0.5;
 	color: white;
@@ -33,9 +31,10 @@ div span{
 }
 .rep{  
     
-    color: red;
+    color: white;
     text-decoration: none;
 }
+
 #menu{
     float: left;
     box-sizing: border-box;
@@ -43,4 +42,37 @@ div span{
     margin-top: 10px;
     color: white;
     font-size: 30px;
+}
+
+#menu:hover{
+    opacity: 0.5;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+#szukaj{
+    float: right;
+    border-radius: 8px;
+     border: none;
+     box-shadow: 5px 5px 5px grey;
+    margin-right: 200px;
+    margin-top: 20px;
+    color: black;
+    
+   
+}
+#send{
+    font-size: 18px;
+    float: right;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    background-color: gray;
+    box-shadow: 5px 5px 5px grey;
+    box-sizing: border-box;
+    margin-right: -225px;
+    margin-top: 17px;
 }
