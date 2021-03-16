@@ -1,8 +1,8 @@
 # Lista zadań (bez logiki):
  * strona główna (index.html)
  * strona szczegółów filmu (details.html)
-     ** jedna podstrona - szablon
-     ** nazwa filmu przekazywana w formacie _"/details/nazwa+filmu"_
+     * jedna podstrona - szablon
+     * nazwa filmu przekazywana w formacie _"/details/nazwa+filmu"_
  * strona repertuaru (program.html)
  * strona rezerwacji (reservation.html)
  * strona pobrania danych do rezerwacji (reservationDetails.html)
