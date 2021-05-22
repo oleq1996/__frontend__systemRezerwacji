@@ -8,8 +8,8 @@ body{
     height: 100%;
 	}
 .logo{
-	border: px solid black;
-    height: 55px;
+	border: 1px solid black;
+    height: 60px;
 	background: #000;
 }
 .tekst{
@@ -80,12 +80,44 @@ div span{
     margin-top: 17px;
 }
 .zwiastun{
+    margin-top: 50px;
     width:100%;
     height:50%;
 }
 .cos{
-    margin-left: 450px;
+    margin-left: 20%;
+    margin-right: 50%;
     width: 1200px;
     height: 900px;
 }
+#lewa{
+    position:absolute;
+    left: 500px;
+    top: 300px;
+}
+#prawa{
+    position:absolute;
+    right: 500px;
+    top: 300px;
+}
+.mySlides{
+    width: 400px;
+    height: 400px;
+}
+iframe{
+    position: relative;
+    left: 185px;
+    top: 50px;
+    background-size: cover;
+    width: 780px;
+    height: 400px;
+}
+a{
+    text-decoration: none
+}
+
+
+
+
+
 
