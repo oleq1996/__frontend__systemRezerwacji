@@ -1,0 +1,80 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #696969;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size: 100%;
+    height: 100%;
+	}
+.logo{
+	border: 1px solid black;
+    height: 60px;
+	background: #000;
+}
+
+.tekst{
+	color: white;
+	margin-left: 100px;
+    float: left;
+    text-decoration: none;
+}
+div span{ 
+ font-size:40px;
+}
+
+.tekst:hover{
+	opacity: 0.5;
+	color: white;
+	margin-left: 100px;
+}
+.tekst:active{
+    color: blue;
+	margin-left: 100px;
+}
+/*poprzycisniesciu nie wystepuje zmiana koloru danego menu */
+.rep{
+    margin-left: 15px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+/* #menu potrzebde do menu w lini poziomej  */
+#menu{
+    float: left;
+    box-sizing: border-box;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+/* odstęp pomiędzy danymi repertuar a cennikiem na menu*/
+#menu:hover{
+    opacity: 0.5;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+
+#rodzic {
+  background-color:black;
+  width: 900px;
+    height: 200px;
+    font-size:1.4em;
+    
+  
+}
+
+#dziecko1 {
+  background-color:lightblue;
+}
+
+#dziecko2 {
+  background-color:lightgreen;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cinema</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styl.css" type="text/css" />
+    
+</head>
+
+<body>
+    <div class="logo">
+        <div class="tekst"> <span>Cinema</span> <sub>by codeBang</sub> </div>
+
+        <div id="menu"><a class="rep" href="cennik.html"> Repertuar</a> </div>
+        <div id="menu"><a class="rep" href="cennik.html"> Cennik</a> </div>
+        <div id="menu"><a class="rep" href="reservation.html"> Rezerwacja</a> </div>
+
+
+    </div>
+
+    <div class="cos">
+        <a class="lewa" onclick="plusSlides(-1)"><img src="lewa.png" id="lewa" /></a>
+        <a class="prawa" onclick="plusSlides(1)"><img src="prawa.png" id="prawa" /></a>
+        <div class="mySlides">
+            <iframe class="dot" src="https://www.youtube.com/embed/PTIvgh5atWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="mySlides">
+            <iframe class="dot" src="https://www.youtube.com/embed/_6HVLX1C0EQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="mySlides">
+            <iframe class="dot" src="https://www.youtube.com/embed/Z1BCujX3pw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    
+    
+    </div>
+    <script>
+        var slideIndex1 = 1;
+        showSlides1(slideIndex1);
+
+        function plusSlides(n) {
+            showSlides1(slideIndex1 += n);
+        }
+
+        function currentSlide1(n) {
+            showSlides1(slideIndex1 = n);
+        }
+
+        function showSlides1(n) {
+            var i;
+
+            var slides = document.getElementsByClassName("mySlides");
+
+            var dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                slideIndex1 = 1
+            }
+
+            if (n < 1) {
+                slideIndex1 = slides.length
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+
+            slides[slideIndex1 - 1].style.display = "block";
+            dots[slideIndex1 - 1].className += "active";
+
+        }
+    </script>
+</body></html>
