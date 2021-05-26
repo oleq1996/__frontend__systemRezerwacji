@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -40,6 +34,13 @@ div span {
 .tekst:active {
     color: blue;
     margin-left: 100px;
+}
+
+.rep {
+    margin-left: 15px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
 }
 
 #menu {

@@ -63,33 +63,36 @@ div span{
     width:100%;
     height:50%;
 }
-.cos{
-    margin-left: 20%;
-    margin-right: 20%;
-    width: 1200px;
-    height: 600px;
+.zwiastunyFilmow {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    height: 700px;
 }
 #lewa{
-    position:absolute;
-    left: 500px;
-    top: 300px;
+    position: absolute;
+    left: 200px;
+    top: 350px;
 }
 #prawa{
-    position:absolute;
-    right: 500px;
-    top: 300px;
+   position: absolute;
+    right: 200px;
+    top: 350px;
 }
 .mySlides{
-    width: 400px;
+    width: 600px;
     height: 400px;
 }
 iframe{
+    border: 10px solid #530b53;
+    border-radius: 20px;
     position: relative;
-    left: 185px;
+    left: 48%;
+    right: 20%;
     top: 50px;
     background-size: cover;
-    width: 780px;
-    height: 400px;
+    width: 220%;
+    height: 140%;
 }
 a{
     text-decoration: none
