@@ -61,20 +61,80 @@ div span{
 }
 
 
-#rodzic {
-  background-color:black;
-  width: 900px;
-    height: 200px;
+.cennik {
+  background-color:#696969;
+  width: 950px;
+    height: 240px;
     font-size:1.4em;
+    margin: auto;
+    margin-top: 150px;
     
   
 }
-
-#dziecko1 {
-  background-color:lightblue;
+p
+{
+   text-align: center;
+}
+#g1 {
+   box-shadow: 10px 10px 28px 9px rgba(68, 6, 83, 1);
+    border-radius: 20px;
+    margin-bottom:30px;
+    margin-right: 20px;
+     height: 100px;   
+    float:left;
+  background-color:#865486;
+    width: 300px;
 }
 
-#dziecko2 {
-  background-color:lightgreen;
+#g2 {
+    box-shadow: 10px 10px 28px 9px rgba(68, 6, 83, 1);
+    border-radius: 20px;
+    height: 100px;
+    margin-right: 20px;
+   margin-bottom:30px;
+    float:left;
+  background-color:#865486 ;
+     width: 300px;
 }
 
+#g3 {
+    text-align: center;
+    box-shadow: 10px 10px 28px 9px rgba(68, 6, 83, 1);
+    border-radius: 20px;
+    margin-bottom:30px;
+    height: 100px;
+    float:left;
+  background-color:#865486;
+     width: 300px;
+        
+}
+#d1 {
+    box-shadow: 10px 10px 28px 9px rgba(127, 74, 139, 1);
+      clear:both; 
+    margin-right: 20px;
+     height: 100px;   
+    float:left;
+  background-color:#A885A8;
+    border-radius: 20px;
+     width: 300px;
+}
+
+#d2 {
+    box-shadow: 10px 10px 28px 9px rgba(127, 74, 139, 1);
+    border-radius: 20px;
+    height: 100px;
+   margin-right: 20px;
+    float:left;
+  background-color:#A885A8;
+     width: 300px;
+}
+
+#d3 {
+    box-shadow: 10px 10px 28px 9px rgba(127, 74, 139, 1);
+    border-radius: 20px;
+    height: 100px;
+    float:left;
+  background-color:#A885A8;
+    width: 300px;
+        
+}
