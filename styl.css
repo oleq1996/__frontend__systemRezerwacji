@@ -1,0 +1,106 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #696969;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size: 100%;
+    height: 100%;
+	}
+.logo{
+	border: 1px solid black;
+    height: 60px;
+	background: #000;
+}
+
+.tekst{
+	color: white;
+	margin-left: 100px;
+    float: left;
+    text-decoration: none;
+}
+div span{ 
+ font-size:40px;
+}
+
+.tekst:hover{
+	opacity: 0.5;
+	color: white;
+	margin-left: 100px;
+}
+.tekst:active{
+    color: blue;
+	margin-left: 100px;
+}
+.rep{
+    margin-left: 15px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+#menu{
+    float: left;
+    box-sizing: border-box;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+#menu:hover{
+    opacity: 0.5;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.zwiastun{
+    margin-top: 50px;
+    width:100%;
+    height:50%;
+}
+.zwiastunyFilmow {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    height: 700px;
+}
+#lewa{
+    position: absolute;
+    left: 200px;
+    top: 350px;
+}
+#prawa{
+   position: absolute;
+    right: 200px;
+    top: 350px;
+}
+.mySlides{
+    width: 600px;
+    height: 400px;
+}
+iframe{
+    border: 10px solid #530b53;
+    border-radius: 20px;
+    position: relative;
+    left: 48%;
+    right: 20%;
+    top: 50px;
+    background-size: cover;
+    width: 220%;
+    height: 140%;
+}
+a{
+    text-decoration: none
+}
+
+#wprowadzZmienne{
+    font-size: 30px;
+    height: 30px;
+}
+
+
