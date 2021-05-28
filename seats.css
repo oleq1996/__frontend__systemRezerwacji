@@ -43,7 +43,7 @@ div span {
     text-decoration: none;
 }
 
-#menu {
+.menu {
     float: left;
     box-sizing: border-box;
     margin-left: 100px;
@@ -52,7 +52,7 @@ div span {
     font-size: 30px;
 }
 
-#menu:hover {
+.menu:hover {
     opacity: 0.5;
     float: left;
     box-sizing: border-box;
@@ -90,7 +90,7 @@ div span {
 }
 
 .seat.selected {
-    background-color: #6feaf6;
+    background-color: #530b53;
 }
 
 .seat.occupied {
@@ -152,4 +152,10 @@ div span {
 
 a {
     text-decoration: none
+}
+
+input{
+    background-color: #adadad;
+    border: 0;
+    text-align: center;
 }
