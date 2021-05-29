@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #696969;
+    background-color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -111,9 +111,38 @@ a {
 }
 
 #repertuarFilm{
-    margin: 10%
+    margin-top: 40px;
+    margin-left: 100px;
 }
 .mySlides{
     width: 600px;
     height: 400px;
+}
+.plakat{
+    width: 500px;
+    height: 650px;
+}
+.opisfilmu{
+    margin: 200px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.zdj{
+    flex-basis: 50%;
+}
+.informacje{
+    flex-basis: 50%;
+    height: 100%;
+    vertical-align: top ;
+}
+.tytul{
+
+}
+.time{
+
+}
+.info{
+
 }
