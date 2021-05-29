@@ -128,6 +128,7 @@ a {
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
+    border: 10px solid purple;
 }
 .zdj{
     flex-basis: 50%;
