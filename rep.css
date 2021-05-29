@@ -1,47 +1,51 @@
-body{
-	margin:0;
-	padding:0;
-	background-color: #696969;
-	background-repeat: no-repeat;
-	background-attachment:fixed;
-	background-size: 100%;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
     height: 100%;
-	}
-.logo{
-	border: 1px solid black;
-    height: 60px;
-	background: #000;
 }
 
-.tekst{
-	color: white;
-	margin-left: 100px;
+.logo {
+    border: 1px solid black;
+    height: 60px;
+    background: #000;
+}
+
+.tekst {
+    color: white;
+    margin-left: 100px;
     float: left;
     text-decoration: none;
 }
-div span{ 
- font-size:40px;
+
+div span {
+    font-size: 40px;
 }
 
-.tekst:hover{
-	opacity: 0.5;
-	color: white;
-	margin-left: 100px;
+.tekst:hover {
+    opacity: 0.5;
+    color: white;
+    margin-left: 100px;
 }
-.tekst:active{
+
+.tekst:active {
     color: blue;
-	margin-left: 100px;
+    margin-left: 100px;
 }
+
 /*poprzycisniesciu nie wystepuje zmiana koloru danego menu */
-.rep{
+.rep {
     margin-left: 15px;
     font-size: 40px;
     color: white;
     text-decoration: none;
 }
 
-/* #menu potrzebde do menu w lini poziomej  */
-#menu{
+/* .menu potrzebde do menu w lini poziomej  */
+.menu {
     float: left;
     box-sizing: border-box;
     margin-left: 100px;
@@ -49,8 +53,9 @@ div span{
     color: white;
     font-size: 30px;
 }
+
 /* odstęp pomiędzy danymi repertuar a cennikiem na menu*/
-#menu:hover{
+.menu:hover {
     opacity: 0.5;
     float: left;
     box-sizing: border-box;
@@ -60,11 +65,85 @@ div span{
     font-size: 30px;
 }
 
+a {
+    text-decoration: none
+}
+
+
+
+/*Kwadraty z datami */
+.kwadrat {
+    text-align: center;
+    font-weight: bold;
+    width: 100px;
+    height: 80px;
+    background-color: #865486;
+    margin: 10px;
+    border: 5px solid #530b53;
+    border-radius: 15%;
+}
+
+.kwadrat:hover {
+/*    border: 10px solid #530b53;*/
+    text-shadow: black 0.1em 0.1em 0.2em;
+    box-shadow: 10px 10px 28px 9px rgba(68, 6, 83, 1);
+    
+}
+
+
+/*kontener z rospiska na tydzien*/
+.tydzien{
+    box-sizing: border-box;
+    margin-top: 75px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
 
 .cennik {
-  background-color:#696969;
-  width: 950px;
+    background-color: #696969;
+    width: 950px;
     height: 240px;
-    font-size:1.4em;
+    font-size: 1.4em;
     margin: auto;
     margin-top: 150px;
+}
+
+#repertuarFilm{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.mySlides{
+    width: 600px;
+    height: 400px;
+}
+.plakat{
+    width: 500px;
+    height: 650px;
+}
+.opisfilmu{
+    margin: 200px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 10px solid purple;
+}
+.zdj{
+    flex-basis: 50%;
+}
+.informacje{
+    flex-basis: 50%;
+    height: 100%;
+    vertical-align: top ;
+}
+.tytul{
+
+}
+.time{
+
+}
+.info{
+
+}
