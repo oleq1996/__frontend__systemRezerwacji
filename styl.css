@@ -1,7 +1,7 @@
 body{
 	margin:0;
 	padding:0;
-	background-color: #696969;
+	background-color: white;
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-size: 100%;
@@ -39,7 +39,7 @@ div span{
     text-decoration: none;
 }
 
-#menu{
+.menu{
     float: left;
     box-sizing: border-box;
     margin-left: 100px;
@@ -48,7 +48,7 @@ div span{
     font-size: 30px;
 }
 
-#menu:hover{
+.menu:hover{
     opacity: 0.5;
     float: left;
     box-sizing: border-box;
@@ -71,11 +71,13 @@ div span{
 }
 #lewa{
     position: absolute;
+    cursor: pointer;
     left: 200px;
     top: 350px;
 }
 #prawa{
    position: absolute;
+    cursor: pointer;
     right: 200px;
     top: 350px;
 }
