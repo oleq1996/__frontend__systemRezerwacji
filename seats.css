@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #696969;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -81,7 +81,7 @@ div span {
 }
 
 .seat {
-    background-color: #530b53;
+    background-color: #444451;
     height: 22px;
     width: 40px;
     margin: 7px;
@@ -90,15 +90,11 @@ div span {
 }
 
 .seat.selected {
-<<<<<<< HEAD
-    background-color: green;
-=======
     background-color: #530b53;
->>>>>>> d3cb5b9f3281cee7f30520043e2dc99b83beb6d0
 }
 
 .seat.occupied {
-    background-color:#444451;
+    background-color: white;
 }
 
 .seat:not(.occupied):hover {

@@ -1,11 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    background-color: white;
-=======
     background-color: #696969;
->>>>>>> d3cb5b9f3281cee7f30520043e2dc99b83beb6d0
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -115,46 +111,9 @@ a {
 }
 
 #repertuarFilm{
-<<<<<<< HEAD
-    margin-top: 40px;
-    margin-left: 100px;
-=======
     margin: 10%
->>>>>>> d3cb5b9f3281cee7f30520043e2dc99b83beb6d0
 }
 .mySlides{
     width: 600px;
     height: 400px;
-<<<<<<< HEAD
 }
-.plakat{
-    width: 500px;
-    height: 650px;
-}
-.opisfilmu{
-    margin: 200px;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.zdj{
-    flex-basis: 50%;
-}
-.informacje{
-    flex-basis: 50%;
-    height: 100%;
-    vertical-align: top ;
-}
-.tytul{
-
-}
-.time{
-
-}
-.info{
-
-}
-=======
-}
->>>>>>> d3cb5b9f3281cee7f30520043e2dc99b83beb6d0
