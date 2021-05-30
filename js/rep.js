@@ -22,7 +22,7 @@ fetch('http://localhost:8081/test/videos')
                 console.log(seans[i]);
                 repertuarFilm.innerHTML += '<div class="opisfilmu">\n' +
                     '    <div class="zdj">\n' +
-                    '        <img class="plakat " src="' + resp[i].url_poster + '">' +
+                    '        <img class="plakat " src="' + resp[i].urlPoster + '">' +
                     '    </div>\n' +
                     '\n' +
                     '    <div class="informacje">\n' +
@@ -33,10 +33,10 @@ fetch('http://localhost:8081/test/videos')
                     '            <h1>Czas trwania: ' + resp[i].duration + '</h1>\n' +
                     '        </div>\n' +
                     '       <div class="premiera" >\n' +
-                    '            <h1>' + resp[i].genre+ ' | Od lat: ' + resp[i].age_restriction+ '</h1>\n' +
+                    '            <h1>' + resp[i].genre+ ' | Od lat: ' + resp[i].ageRestriction+ '</h1>\n' +
                     '        </div>\n' +
                     '       <div class="premiera" >\n' +
-                    '            <h1> Data premiery:  ' + resp[i].premiere_year + '</h1>\n' +
+                    '            <h1> Data premiery:  ' + resp[i].premiereYear + '</h1>\n' +
                     '        </div>\n' +
                     '       <div class="premiera" >\n' +
                     '            <h1> Język:  ' + resp[i].language + '</h1>\n' +
@@ -68,7 +68,7 @@ function wybrane(data) {
 
 
 
-                fetch('http://localhost:8081/test/playing')
+                fetch('http://localhost:8081/test/playing/')
                     .then(resp2 => resp2.json())
                     .then(resp2 =>{
                         if(resp2.length !== 0){
@@ -91,38 +91,44 @@ function wybrane(data) {
 
                         for (let i= 0; i<seanseDzisiaj.length; i++) {
 
-                            let cos = seanseDzisiaj[i].video_id;
-                            console.log(seans[cos].title);
-                            repertuarFilm.innerHTML += '<div class="opisfilmu">\n' +
-                                '    <div class="zdj">\n' +
-                                '        <img class="plakat" src="' + seans[cos].url_poster +'">' +
-                                '    </div>\n' +
-                                '\n' +
-                                '    <div class="informacje">\n' +
-                                '        <div class="tytul">\n' +
-                                '            <h1>'  + seans[cos].title + ' </h1>\n' +
-                                '        </div>\n' +
-                                '        <div class="time">\n' +
-                                '            <h1>Czas trwania: ' + seans[cos].duration + '</h1>\n' +
-                                '        </div>\n' +
-                                 '       <div class="lata" >\n' +
-                                '            <h1>' + seans[cos].genre+ ' | Od lat: ' + seans[cos].age_restriction+ '</h1>\n' +
-                                            '        </div>\n' +
-                                '       <div class="premiera" >\n' +
-                                '            <h1> Data premiery:  ' + seans[cos].premiere_year + '</h1>\n' +
-                                '        </div>\n' +
-                                '       <div class="jezyk" >\n' +
-                                '            <h1> Język:  ' + seans[cos].language + '</h1>\n' +
-                                '        </div>\n' +
-                                '        <div class="info" >\n' +
-                                '            <h1> Opis filmu:  ' + seans[cos].description + '</h1>\n' +
-                                '        </div>\n' +
-                                '        <div class="info" >\n' +
-                                '            <h1> Godzina rozpoczecia seansu:  ' + seanseDzisiaj[i].time+ '</h1>\n' +
-                                '        </div>\n' +
-                                '        <a href="reservation.html"><button class="rezer" id="'+seanseDzisiaj[i].id+'" type="button">Zarezerwuj</button></a>'
-                                '    </div>\n' +
-                                '</div>';
+                            let cos = seanseDzisiaj[i].videoId;
+                            seans.forEach(n =>{
+                                if(n.id === cos){
+                                    console.log(n.title);
+                                    repertuarFilm.innerHTML += '<div class="opisfilmu">\n' +
+                                        '    <div class="zdj">\n' +
+                                        '        <img class="plakat" src="' + n.urlPoster +'">' +
+                                        '    </div>\n' +
+                                        '\n' +
+                                        '    <div class="informacje">\n' +
+                                        '        <div class="tytul">\n' +
+                                        '            <h1>'  + n.title + ' </h1>\n' +
+                                        '        </div>\n' +
+                                        '        <div class="time">\n' +
+                                        '            <h1>Czas trwania: ' + n.duration + '</h1>\n' +
+                                        '        </div>\n' +
+                                        '       <div class="lata" >\n' +
+                                        '            <h1>' + n.genre+ ' | Od lat: ' + n.ageRestriction+ '</h1>\n' +
+                                        '        </div>\n' +
+                                        '       <div class="premiera" >\n' +
+                                        '            <h1> Data premiery:  ' + n.premiereYear + '</h1>\n' +
+                                        '        </div>\n' +
+                                        '       <div class="jezyk" >\n' +
+                                        '            <h1> Język:  ' + n.language + '</h1>\n' +
+                                        '        </div>\n' +
+                                        '        <div class="info" >\n' +
+                                        '            <h1> Opis filmu:  ' + n.description + '</h1>\n' +
+                                        '        </div>\n' +
+                                        '        <div class="info" >\n' +
+                                        '            <h1> Godzina rozpoczecia seansu:  ' + seanseDzisiaj[i].time+ '</h1>\n' +
+                                        '        </div>\n' +
+                                        '        <a href="reservation.html"><button class="rezer" id="'+seanseDzisiaj[i].id+'" type="button">Zarezerwuj</button></a>'
+                                    '    </div>\n' +
+                                    '</div>';
+                                }
+                            })
+
+
 
                         }
                         const rezerw = document.querySelectorAll('.rezer');
