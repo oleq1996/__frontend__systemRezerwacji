@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #242333;
+    color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -158,4 +159,18 @@ input{
     background-color: #adadad;
     border: 0;
     text-align: center;
+}
+
+button{
+    margin: 20px 50px;
+    font-size:20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 15px;
+}
+button:hover{
+    background: white;
+    color: black;
 }

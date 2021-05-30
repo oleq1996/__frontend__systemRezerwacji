@@ -1,4 +1,4 @@
-console.log("dupcia");
+
 const repertuarFilm = document.getElementById('repertuarFilm');
 const selectDay = document.querySelectorAll(".kwadrat");
 
@@ -27,20 +27,26 @@ fetch('http://localhost:8081/test/videos')
                     '\n' +
                     '    <div class="informacje">\n' +
                     '        <div class="tytul">\n' +
-                    '            <h1> ' + resp[i].title + ' </h1>\n' +
+                    '            <h1>'  + resp[i].title + ' </h1>\n' +
                     '        </div>\n' +
                     '        <div class="time">\n' +
-                    '            <h1> ' + resp[i].duration + '</h1>\n' +
+                    '            <h1>Czas trwania: ' + resp[i].duration + '</h1>\n' +
+                    '        </div>\n' +
+                    '       <div class="premiera" >\n' +
+                    '            <h1>' + resp[i].genre+ ' | Od lat: ' + resp[i].age_restriction+ '</h1>\n' +
+                    '        </div>\n' +
+                    '       <div class="premiera" >\n' +
+                    '            <h1> Data premiery:  ' + resp[i].premiere_year + '</h1>\n' +
+                    '        </div>\n' +
+                    '       <div class="premiera" >\n' +
+                    '            <h1> Język:  ' + resp[i].language + '</h1>\n' +
                     '        </div>\n' +
                     '        <div class="info" >\n' +
-                    '            <h1> ' + resp[i].description + '</h1>\n' +
+                    '            <h1> Opis filmu:  ' + resp[i].description + '</h1>\n' +
                     '        </div>\n' +
                     '    </div>\n' +
                     '</div>';
-                // repertuarFilm.innerHTML += '<h1 class="title">' + resp[i].title + '</h1>';
-                // repertuarFilm.innerHTML += '<h3 class="czas" id="szczegoly">' + resp[i].duration + '</h3>';
-                // repertuarFilm.innerHTML +=  '<img  class="plakat" src="' + resp[i].url_poster + '"></img>';
-                // repertuarFilm.innerHTML += '<h4 class="opis">' + resp[i].description + '</h4>';
+
             }
         }
     })
@@ -50,7 +56,6 @@ function wybrane(data) {
     let seans2 =[];
     let seanseDzisiaj = [];
     repertuarFilm.innerHTML = '';
-    console.log('gandi dupcia');
     fetch('http://localhost:8081/test/videos')
         .then(resp => resp.json())
         .then(resp => {
@@ -74,7 +79,6 @@ function wybrane(data) {
                             resp2 =seans2;
                         }
                         console.log(seans, 'check next ');
-                        console.log(seans2, 'cycki');
 
                         for (let i=0;  seans2.length > i; i++){
                             if(seans2[i].date === data){
@@ -96,20 +100,32 @@ function wybrane(data) {
                                 '\n' +
                                 '    <div class="informacje">\n' +
                                 '        <div class="tytul">\n' +
-                                '            <h1> ' + seans[cos].title + ' </h1>\n' +
+                                '            <h1>'  + seans[cos].title + ' </h1>\n' +
                                 '        </div>\n' +
                                 '        <div class="time">\n' +
-                                '            <h1> ' + seans[cos].duration + '</h1>\n' +
+                                '            <h1>Czas trwania: ' + seans[cos].duration + '</h1>\n' +
+                                '        </div>\n' +
+                                 '       <div class="lata" >\n' +
+                                '            <h1>' + seans[cos].genre+ ' | Od lat: ' + seans[cos].age_restriction+ '</h1>\n' +
+                                            '        </div>\n' +
+                                '       <div class="premiera" >\n' +
+                                '            <h1> Data premiery:  ' + seans[cos].premiere_year + '</h1>\n' +
+                                '        </div>\n' +
+                                '       <div class="jezyk" >\n' +
+                                '            <h1> Język:  ' + seans[cos].language + '</h1>\n' +
                                 '        </div>\n' +
                                 '        <div class="info" >\n' +
-                                '            <h1> ' + seans[cos].description + '</h1>\n' +
+                                '            <h1> Opis filmu:  ' + seans[cos].description + '</h1>\n' +
                                 '        </div>\n' +
-                                '        <a href="reservation.html"><button class="cycuszki" id="'+seanseDzisiaj[i].video_id+'" type="button">DUPCIA</button></a>' //zmienic potem :D
+                                '        <div class="info" >\n' +
+                                '            <h1> Godzina rozpoczecia seansu:  ' + seanseDzisiaj[i].time+ '</h1>\n' +
+                                '        </div>\n' +
+                                '        <a href="reservation.html"><button class="rezer" id="'+seanseDzisiaj[i].id+'" type="button">Zarezerwuj</button></a>'
                                 '    </div>\n' +
                                 '</div>';
 
                         }
-                        const rezerw = document.querySelectorAll('.cycuszki');
+                        const rezerw = document.querySelectorAll('.rezer');
                         rezerw.forEach(n =>{
                             n.addEventListener('click', function (){
                                 localStorage.clear();
