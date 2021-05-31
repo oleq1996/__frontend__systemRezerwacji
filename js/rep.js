@@ -8,7 +8,7 @@ selectDay.forEach(n => {
     })
 })
 
-fetch('http://localhost:8081/test/videos')
+fetch('http://localhost:8081/cinema/videos')
     .then(resp => resp.json())
     .then(resp => {
         if (resp.length !== 0) {
@@ -56,7 +56,7 @@ function wybrane(data) {
     let seans2 =[];
     let seanseDzisiaj = [];
     repertuarFilm.innerHTML = '';
-    fetch('http://localhost:8081/test/videos')
+    fetch('http://localhost:8081/cinema/videos')
         .then(resp => resp.json())
         .then(resp => {
             if (resp.length !== 0) {
@@ -68,7 +68,7 @@ function wybrane(data) {
 
 
 
-                fetch('http://localhost:8081/test/playing/')
+                fetch('http://localhost:8081/cinema/playing/')
                     .then(resp2 => resp2.json())
                     .then(resp2 =>{
                         if(resp2.length !== 0){

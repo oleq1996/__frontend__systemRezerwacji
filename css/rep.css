@@ -112,7 +112,7 @@ a {
 }
 
 #repertuarFilm{
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 100px;
 }
 .mySlides{
@@ -120,8 +120,8 @@ a {
     height: 400px;
 }
 .plakat{
-    width: 500px;
-    height: 650px;
+    width: 400px;
+    height: 550px;
 }
 .opisfilmu{
     margin: 200px;
@@ -132,10 +132,10 @@ a {
     border: 10px solid purple;
 }
 .zdj{
-    flex-basis: 50%;
+    flex-basis: 30%;
 }
 .informacje{
-    flex-basis: 50%;
+    flex-basis: 70%;
     height: 100%;
     vertical-align: top ;
 }
