@@ -48,23 +48,16 @@ przycisk.addEventListener('click', function (e) {
         list),
     contentType: 'application/json; charset=utf-8',
      success: function (link){
-    //   name_form = form_res.name;
-    //   lastName_form = form_res.lastName;
-    //   phone_form = form_res.phone;
-    //   email_form = form_res.email;
-    //   seatsForm = seats;
-    //   document.querySelector('.toLateReservation').innerHTML = <b style="color: green;"> Zarezerwowałeś: +seats+ </b> &nbsp;<button class="btn" onclick="generateTicket(name_form, lastName_form, email_form, phone_form, titleTicket, seatsForm, timeTicket) "  >Pobierz bilet </button> ;
     console.log('Udałlo sie kupic bilet');
+         alert('Udało Ci się zarezerwować bilet');
 
     },
     error: function (){
       fetch('http://localhost:8081/test/seats')
           .then(resp => resp.json())
           .then(resp => {
-            // freeSeats = resp.freeSeats;
-            // generateSeats(freeSeats);
-            // document.querySelector('.toLateReservation').innerHTML = <b> Niestety, spóźniłeś się. Wybrane miejsca zostały już zarezerwowane przez kogoś innego.</b> ;
             console.log('wystapił bład');
+              alert('Nie udało Ci się zarezerwować bilet');
           });
     }
   });
